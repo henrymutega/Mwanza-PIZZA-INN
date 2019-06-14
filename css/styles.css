@@ -1,12 +1,29 @@
-#show-contact {
-  display: none;
+body
+{
+  background-color: #ffa333;
 }
-
-.contact {
-  cursor: pointer;
-  color: #0088cc;
+.carousel-inner img
+{
+  left: 50%;
+  right: 50%;
 }
-
-.contact:hover {
+h1
+{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.top
+{
+  text-align: center;
+}
+.topping
+{
+  font-size: 30px;
+  margin-left: 50px;
   text-decoration: underline;
-}  
+}
+.card
+{
+  background-color: #ffb356;
+}
