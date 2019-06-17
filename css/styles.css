@@ -27,3 +27,23 @@ h1
 {
   background-color: #ffb356;
 }
+.order
+{
+  background-color: white;
+  margin-bottom: 100px;
+}
+
+
+
+#show-contact {
+  display: none;
+}
+
+.contact {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.contact:hover {
+  text-decoration: underline;
+}
