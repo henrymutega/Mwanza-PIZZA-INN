@@ -13,37 +13,21 @@ h1
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.top
-{
-  text-align: center;
-}
-.topping
-{
-  font-size: 30px;
-  margin-left: 50px;
-  text-decoration: underline;
-}
-.card
-{
-  background-color: #ffb356;
-}
-.order
-{
-  background-color: white;
-  margin-bottom: 100px;
-}
-
-
-
-#show-contact {
-  display: none;
-}
-
 .contact {
   cursor: pointer;
   color: #0088cc;
+  background-color:  #232426;
+  padding: 50px;
 }
 
 .contact:hover {
   text-decoration: underline;
+}
+.order
+{
+  background-color: #ffe8cc;
+}
+#form1
+{
+  margin-left: 20px;
 }
