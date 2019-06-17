@@ -129,12 +129,15 @@
       <div class="col-4 order">
         <form id="form1">
           <h3>Place your order now</h3>
+          <div id="orders">
           size: <input type="text" name="name" required placeholder="Small, Medium, Large" id="one"><br><br>
           Top:  <input type="text" name="name" required placeholder="Bacon, Meat, Veggie, Pepperoni" id="two"><br><br>
           Crust: <input type="text" name="name" placeholder="Crispy, Stuffed, Gluten-free" id="three"><br><br>
+          </div>
           <p>Do you want your order to be delivered to your location</p>
           <input type="text" name="name" required placeholder="YES, NO" id="four"><br><br>
-        <button type="button" name="button" onclick="outputname()" id="sub">Submit</button><br><br>
+        <button type="button" name="button" onclick="outputname()" id="sub">Submit</button>
+          <button type="button" name="button" onclick="order()" id="orderAgain">Order Again</button> <br><br>
       </form>
     </div>
       <div class="col-4">
