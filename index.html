@@ -63,14 +63,14 @@
     <p><strong> <span class="topping"> What is your faviourite Pizza topping you say?</span></strong></p>
     <p>Everybody loves Pizza, but in different toppings. Your favourite topping therefore give you insight into your personality. </p><br><br>
 
-      <!--The body images and descriptions---->
+    <!--The body images and descriptions---->
     <div class="row">
       <div class="col-4">
         <div class="card">
           <div class="card-header text-center">Barbecue Chicken Pizza</div>
           <div class="card-body"><img src="images/bbqchicken.jpg" alt="Barbecue Chicken" class="img-fluid">
             <p>You probably dread ordering pizza because you know that you’ll have to explain, yet again, why on earth you prefer yours without cheese. Your choice goes on to show that you don’t always like to fit the mould, and there’s certainly a place for square pegs in this round world!</p>
-           </div>
+          </div>
           <div class="card-footer">price</div>
         </div>
       </div>
@@ -125,49 +125,30 @@
     </div><br><br><br>
     <!---ORDER FORM---->
     <div class="row">
-      <div class="col-3"></div>
-      <div class="col-md-6">
-        <h2>Place Your Order</h2>
-        <form id="new-contact">
-          <div id="new-addresses">
-            <div class="new-address">
-          <div class="form-group">
-            <label for="new-first-name">Size</label>
-            <input type="text"  placeholder="Small, Medium, Large" class="form-control" id="size">
-          </div>
-          <div class="form-group">
-            <label for="new-last-name">Crust</label>
-            <input type="text"  placeholder="Crispy, Stuffed, Gluten-free" class="form-control" id="crust">
-          </div>
-              <div class="form-group">
-                <label for="new-street">Topping</label>
-                <input type="text"  placeholder="Pepperoni, Meat, Bacon" class="form-control new-street" id="topping">
-              </div>
-            </div>
-          </div>
-
-          <span class="btn btn-primary" id="add-address">Add the Items</span>
-
-          <button type="submit" class="btn">Add</button>
+      <div class="col-4"></div>
+      <div class="col-4 order">
+        <form id="form1">
+          <h3>Place your order now</h3>
+          size: <input type="text" name="name" required placeholder="Small, Medium, Large" id="one"><br><br>
+          Top: <input type="text" name="name" required placeholder="Bacon, Meat, Veggie, Pepperoni" id="two"><br><br>
+          Crust: <input type="text" name="name" placeholder="Crispy, Stuffed, Gluten-free" id="three"><br><br>
+          <p>Do you want your order to be delivered to your location</p>
+          <input type="text" name="name" required placeholder="YES, NO" id="four"><br><br>
+        <button type="button" name="button" onclick="outputname()" id="sub">Submit</button><br><br>
         </form>
-
-        <h2>Your Cart:</h2>
-        <ul id="contacts">
-
-        </ul>
       </div>
-
-      <div class="col-md-3">
-        <div id="show-contact">
-          <h2></h2>
-          <p>Size: <span class="first-name"></span></p>
-          <p>Crust: <span class="last-name"></span></p>
-          <p>Topping:</p>
-          <ul id="addresses">
-
-          </ul>
-        </div>
+      <div class="col-4">
+        <p id="dem"></p>
+        <p id="demo"></p>
+        <p id="demos"></p>
+        <p id="re"></p>
+        <p id="demoos"></p>
       </div>
+    </div>
+    <div class="contact">
+      <h1>Get In Touch With Us</h1>
+
+    </div>
   </div>
 </body>
 </html>
