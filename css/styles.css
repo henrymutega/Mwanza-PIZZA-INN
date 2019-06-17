@@ -19,9 +19,9 @@ h1
   background-color:  #232426;
   padding: 50px;
 }
-
-.contact:hover {
-  text-decoration: underline;
+.contact ul
+{
+  margin-left: 100px;
 }
 .order
 {
@@ -30,4 +30,5 @@ h1
 #form1
 {
   margin-left: 20px;
+  margin-top: 20px;
 }
