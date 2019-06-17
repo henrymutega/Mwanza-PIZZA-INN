@@ -12,7 +12,7 @@ var d = delivery;
 var total = [500, 750, 1000, 200, 150];
 
 if(!isNaN(size)) {
-  alert("please enter a standard Size");
+  alert("please enter a standrd Size");
   return;
 }else if(x=="SMALL" && d=="YES"){
   document.getElementById("dem").innerHTML="PIZZA SIZE  "+ x + " Ksh 500";
