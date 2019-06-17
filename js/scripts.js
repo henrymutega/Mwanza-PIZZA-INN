@@ -1,3 +1,4 @@
+// USER INTERFACE
 $(document).ready(function(){
 $("#add-address").click(function() {
   $("#new-addresses").append('<div class="form1">' +
@@ -24,6 +25,7 @@ $(document).ready(function(){
   $("input#four").val("");
 });
 
+// BUSINESS LOGIC
 var outputname = function  (){
 var size = (document.getElementById('one').value).toUpperCase();
 var top = (document.getElementById('two').value).toUpperCase();
@@ -36,6 +38,7 @@ var z = crust;
 var d = delivery;
 var total = [500, 750, 1000, 200, 150];
 
+//USER INTERFACE
 if(!isNaN(size)) {
   alert("please enter a standard Size");
   return;
