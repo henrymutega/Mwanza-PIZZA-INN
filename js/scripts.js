@@ -4,15 +4,15 @@ $(document).ready(function() {
   $("#add-address").click(function() {
     $("#new-addresses").append('<div class="new-address">' +
                                  '<div class="form-group">' +
-                                   '<label for="new-street">Street</label>' +
+                                   '<label for="new-street">Size</label>' +
                                    '<input type="text" class="form-control new-street">' +
                                  '</div>' +
                                  '<div class="form-group">' +
-                                   '<label for="new-city">City</label>' +
+                                   '<label for="new-city">Crust</label>' +
                                    '<input type="text" class="form-control new-city">' +
                                  '</div>' +
                                  '<div class="form-group">' +
-                                   '<label for="new-county">County</label>' +
+                                   '<label for="new-county">Topping</label>' +
                                    '<input type="text" class="form-control new-county">' +
                                  '</div>' +
                                '</div>');
@@ -21,54 +21,36 @@ $(document).ready(function() {
   $("form#new-contact").submit(function(event) {
     event.preventDefault();
 
-    var inputtedFirstName = $("input#new-first-name").val();
-    var inputtedLastName = $("input#new-last-name").val();
-    var newContact = new Contact(inputtedFirstName, inputtedLastName);
+    var inputtedSize = $("input#size").val();
+    var inputtedCrust = $("input#crust").val();
+    var inputtedTopping = $("input#topping").val();
+    var newPizza = new Pizza(inputtedSize, inputtedCrust, inputtedTopping);
 
-    $(".new-address").each(function() {
-      var inputtedStreet = $(this).find("input.new-street").val();
-      var inputtedCity = $(this).find("input.new-city").val();
-      var inputtedCounty = $(this).find("input.new-county").val();
-      var newAddress = new Address(inputtedStreet, inputtedCity, inputtedCounty)
-      newContact.addresses.push(newAddress)
-    });
-
-    $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
+    if(inputtedSize == 'small'){
+      return 500 + 100 + 50;
+    };
+    $("ul#contacts").append("<li><span class='contact'>" + newPizza.pizza() + "</span></li>");
 
     $(".contact").last().click(function() {
       $("#show-contact").show();
-      $("#show-contact h2").text(newContact.fullName());
-      $(".first-name").text(newContact.firstName);
-      $(".last-name").text(newContact.lastName);
+      $("#show-contact h2").text(newPizza.pizza());
+      $(".first-name").text(newPizza.size);
+      $(".last-name").text(newPizza.crust);
       $("ul#addresses").text("");
-      newContact.addresses.forEach(function(address) {
-      $("ul#addresses").append("<li>" + address.fullAddress() + "</li>");
-      });
     });
 // Reset the code.
-    $("input#new-first-name").val("");
-    $("input#new-last-name").val("");
-    $("input.new-street").val("");
-    $("input.new-city").val("");
-    $("input.new-county").val("");
-
+    $("input#size").val("");
+    $("input#crust").val("");
+    $("input#topping").val("");
   });
 });
 
 // business logic
-function Contact(first, last) {
-    this.firstName = first;
-    this.lastName = last;
-    this.addresses = [];
-  }
-  function Address(street, city, county) {
-    this.street = street;
-    this.city = city;
-    this.county = county;
-  }
-Contact.prototype.fullName = function() {
-  return this.firstName + " " + this.lastName;
-}
-Address.prototype.fullAddress = function() {
-  return this.street + ", " + this.city + ", " + this.county;
+function Pizza(size, crust, topping) {
+    this.size = size;
+    this.crust = crust;
+    this.topping = topping;
+ }
+Pizza.prototype.pizza = function() {
+  return this.size + " " + this.crust +" "+ this.topping;
 }
