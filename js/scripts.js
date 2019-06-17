@@ -1,17 +1,17 @@
 $(document).ready(function(){
-$("#orderAgain").click(function() {
-  $("#orders").append('<div class="new-address">' +
-                               '<div class="form-group">' +
-                                 '<label for="new-street">Street</label>' +
-                                 '<input type="text" class="form-control new-street">' +
+$("#add-address").click(function() {
+  $("#new-addresses").append('<div class="form1">' +
+                               '<div id="orders">' +
+                                 'size:' +
+                                 '<input type="text" class="form-control">' +
                                '</div>' +
-                               '<div class="form-group">' +
-                                 '<label for="new-city">City</label>' +
-                                 '<input type="text" class="form-control new-city">' +
+                               '<div class="form1">' +
+                                 'Top:' +
+                                 '<input type="text" class="form-control">' +
                                '</div>' +
-                               '<div class="form-group">' +
-                                 '<label for="new-county">County</label>' +
-                                 '<input type="text" class="form-control new-county">' +
+                               '<div class="form1">' +
+                                 'Crust' +
+                                 '<input type="text" class="form-control">' +
                                '</div>' +
                              '</div>');
 });
