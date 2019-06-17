@@ -2,8 +2,9 @@
 #### Brilliant application showing the products and services of MWAZA PIZZA INN.
 #### By **HENRY MUTEGA, The Developer**
 ## Description
-This is a plat form that shows 
-This is a platformthat shows and displays the designs, products and developments completed by Delani Studio. It allows the user to view all the information captured by the studio ranging from the services, what we do, the portfolio and also how you can get in touch with us.
+This is a plat form that shows different types of Pizza categorized according to their sizes, crust and preferred toppings. It allows the user to view the available Pizzas and also giving a room for ordering it.
+It captures the user information whether they wants the order to be delivered or not.
+It also allows the user to make more than one order at a time.
 The site contains information which can be viewed anywhere at your own comfort and accessed any time.
 ## Setup/Installation Requirements
 * git clone https://github.com/henrymutega/delani-studio.
