@@ -15,6 +15,13 @@ $("#add-address").click(function() {
                                '</div>' +
                              '</div>');
 });
+
+});
+$(document).ready(function(){
+  $("input#one").val("");
+  $("input#two").val("");
+  $("input#three").val("");
+  $("input#four").val("");
 });
 
 var outputname = function  (){
